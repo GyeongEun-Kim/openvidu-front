@@ -11,7 +11,9 @@ import UserModel from '../models/user-model';
 import ToolbarComponent from './toolbar/ToolbarComponent';
 
 var localUser = new UserModel();
-const APPLICATION_SERVER_URL = process.env.NODE_ENV === 'production' ? '' : 'http://54.180.42.159:5555/';
+// const APPLICATION_SERVER_URL = process.env.NODE_ENV === 'production' ? 'https://firstpenguin-back.shop:443/' : 'http://54.180.42.159:5555/';
+const APPLICATION_SERVER_URL = process.env.NODE_ENV === 'production' ? 'https://firstpenguin-back.shop:443/' : 'http://localhost:5555/';
+
 
 
 class VideoRoomComponent extends Component {
